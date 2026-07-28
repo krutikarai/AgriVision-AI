@@ -59,7 +59,7 @@ export const History: React.FC = () => {
 
   const getAbsoluteUrl = (urlPath: string) => {
     if (!urlPath) return '';
-    return `http://localhost:8000${urlPath}`;
+    return `https://agrivision-backend-lhni.onrender.com${urlPath}`;
   };
 
   const getStatus = (severity: number) => {

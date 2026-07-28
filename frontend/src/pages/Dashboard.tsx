@@ -201,7 +201,7 @@ const healthyRate =
                   <div key={scan.id} className="py-3 flex items-center justify-between gap-4 first:pt-0 last:pb-0">
                     <div className="flex items-center gap-3.5">
                       <img
-                        src={`http://localhost:8000${scan.image_url}`}
+                        src={`https://agrivision-backend-lhni.onrender.com${scan.image_url}`}
                         alt={scan.crop}
                         className="h-12 w-12 rounded-xl object-cover border border-slate-100 bg-slate-50 shrink-0"
                       />

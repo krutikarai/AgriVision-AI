@@ -31,7 +31,7 @@ interface AuthContextType {
 
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
 
-const API = "http://localhost:8000/api/v1";
+const API = "https://agrivision-backend-lhni.onrender.com/api/v1";
 
 export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({
   children,

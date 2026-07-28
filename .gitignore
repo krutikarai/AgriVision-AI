@@ -1,0 +1,22 @@
+# Python
+backend/venv/
+backend/__pycache__/
+*.pyc
+
+# SQLite Database
+backend/*.db
+
+# Environment Variables
+backend/.env
+frontend/.env
+
+# Node.js
+frontend/node_modules/
+frontend/dist/
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# VS Code
+.vscode/

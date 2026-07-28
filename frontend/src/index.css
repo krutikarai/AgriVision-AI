@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-[#fafdfb] text-slate-800 antialiased font-sans;
+  }
+}
+
+/* Glassmorphism Styling */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px border;
+  @apply border-white/40 shadow-xl shadow-slate-100/50;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid;
+  @apply border-white/50 shadow-md transition-all duration-300 hover:shadow-xl hover:border-white/90;
+}
+
+.glass-card-dark {
+  background: rgba(15, 38, 26, 0.05);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid;
+  @apply border-forest-900/10 shadow-sm transition-all duration-300;
+}
+
+.glass-input {
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  @apply border border-slate-200/80 rounded-xl focus:border-forest-500 focus:bg-white focus:ring-2 focus:ring-forest-500/20 outline-none transition-all duration-200;
+}
+
+/* Page Background Mesh */
+.bg-mesh {
+  background-image: 
+    radial-gradient(at 0% 0%, rgba(236, 252, 203, 0.3) 0px, transparent 50%),
+    radial-gradient(at 50% 0%, rgba(226, 244, 233, 0.35) 0px, transparent 50%),
+    radial-gradient(at 100% 100%, rgba(247, 254, 231, 0.25) 0px, transparent 50%),
+    radial-gradient(at 100% 0%, rgba(243, 250, 245, 0.4) 0px, transparent 50%);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-slate-200 rounded-full hover:bg-slate-300;
+}

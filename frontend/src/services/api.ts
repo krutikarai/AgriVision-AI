@@ -1,4 +1,6 @@
-const BASE_URL = 'https://agrivision-backend-lhni.onrender.com/api/v1';
+const BASE_URL =
+  import.meta.env.VITE_API_URL ||
+  'https://agrivision-backend-lhni.onrender.com/api/v1';
 
 const getHeaders = (): Record<string, string> => {
   const userStr = localStorage.getItem('agri_user');
